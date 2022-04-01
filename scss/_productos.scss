@@ -1,0 +1,45 @@
+@import 'maps.scss';  
+
+.section__productos{
+    display: flex;
+    flex-flow: row wrap;
+    display: grid;    
+    grid-template-columns: auto auto auto;
+   div{
+    background-color: nth($colores,4);
+    margin: 20px;
+       p{
+        @include medidas(25px,arial);
+         }
+       img{
+        width: 400px;
+        height: 300px;
+       }
+   }
+}
+
+
+
+.container__prod{
+    flex-direction: row;
+    @extend %disposicion;
+    a{
+      border: 3px solid  nth($colores,2);
+      border-radius: 10px ;
+      margin: 30px;
+      text-decoration: none;
+      color:  nth($colores,5);
+      text-align: center;
+      font-size: 16px;
+      
+  }
+  a:hover{
+    text-decoration: none;
+    color: nth($colores,5)k;
+    background-color: nth($colores,1);
+
+}
+}
+
+
+

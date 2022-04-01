@@ -1,0 +1,39 @@
+@import 'maps.scss';  
+
+body{
+    h1{
+        color:map-get($titulos1, color);
+    }
+.section__sus{
+   
+ @extend %disposicion-grid;
+    grid-template-areas: "video texto"
+                          "img texto2";
+                          
+
+grid-column-gap: 5%;
+    img{
+        width: 450px;
+    height: 400px;
+    grid-area: img;
+    }
+    p{
+        @include medidas(25px,arial);
+
+     }
+    .texto__sus{
+        font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      grid-area: texto;
+    }
+    .video{
+        grid-area: video;
+    }
+    .texto__sus2{
+        grid-area: texto2;
+        font-size: 25px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+}
