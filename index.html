@@ -9,7 +9,7 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link href="./css/style.css" rel="stylesheet" type="text/css">
+    <link href="./css/style2.css" rel="stylesheet" type="text/css">
     
     <title>Nombre de la pagina</title>
     <link
@@ -29,12 +29,23 @@
                 <li><a class="links__menu" href="#">Home</a> </li>
                 <li><a class="links__menu" href="./pages/new.html">NEW</a> </li>
                 <li><a class="links__menu" href="./pages/about.html">About</a> </li>
-                <li ><a class="links__menu">Productos</a>
+                <li ><!--<a class="links__menu">Productos</a>
                     <ul>
                         <li><a class="links__menu" href="./pages/moda.html">Moda</a></li>
                         <li><a class="links__menu" href="./pages/maquillaje.html">Maquillaje</a></li>
-                        <li><a class="links__menu" href="./pages/cuidadopersonal.html">Cuidado personal</a></li>
-                     </ul>
+                        <li><a class="links__menu" href="./pages/cuidadopersonal.html">Cuidado personal</a></li>-->
+                        <div class=" dropdown dropdown show">
+                          <a class="pr btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Productos
+                          </a>
+                        
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="./pages/moda.html">Moda</a>
+                            <a class="dropdown-item" href="./pages/maquillaje.html">Maquillaje</a>
+                            <a class="dropdown-item" href="./pages/cuidadopersonal.html">cuidado personal</a>
+                          </div>
+                        </div>
+                     
                 </li>
                 <li><a class="links__menu" href="./pages/sustentabilidad.html">Sustentabilidad</a></li>
             </ul>
@@ -43,7 +54,7 @@
 
     <section class="fotos__inicio container"> 
     <div class="fotoP row col-lg-12 col-md-12 col-12">
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div id="carouselExampleControls" class="carousel slide carousel" data-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img src="./img/principal.jpg" class="d-block w-100" alt="...">
@@ -67,19 +78,19 @@
         <!--<img class="foto__inicio" src="./img/principal.jpg" alt="Productos Sustentables">-->
     </div>
 
-  <div class="todas_fotos_home container">
-      <div class="row">
-    <div class="div__margin1 col-lg-4 col--md-6 col-12"> 
+  <div class="todas_fotos_home">
+      <div>
+    <div class="div__margin1"> 
         <img class="fotos__home" src="./img/moda.jpg" alt="moda">
         <a class="container_f" href="#">Moda</a>
     </div>
 
-    <div class="div__margin2 col-lg-4 col-md-6 col-12"> 
+    <div class="div__margin2"> 
         <img class="fotos__home" src="./img/makeup.jpeg" alt="maquillaje">
         <a class="container_f" href="#">Maquillaje</a>
     </div>
 
-    <div class="div__margin3 col-lg-4 col-md-6 col-12"> 
+    <div class="div__margin3"> 
         <img class="fotos__home" src="./img/selfcare.jpg" alt="productos de cuidado personal">
         <a class="container_f" href="#">Cuidado Personal</a>
     </div>
