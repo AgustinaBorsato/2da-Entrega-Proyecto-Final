@@ -1,6 +1,6 @@
 header h1 {
   color: darkgreen;
-  font-size: 60px;
+  font-size: 65px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
@@ -9,8 +9,9 @@ header nav ul {
 }
 header nav ul li {
   display: inline-block;
-  width: 18%;
+  width: 19%;
   position: relative;
+  text-align: center;
   font-size: 16px;
   font-style: arial;
   text-decoration: none;
@@ -22,10 +23,16 @@ header nav ul li a:hover {
 }
 header nav ul li a {
   color: black;
-  color: black;
   font-size: 20px;
   margin: 8px;
   text-decoration: none;
+}
+header nav ul li div .prod {
+  background-color: white !important;
+  color: black !important;
+  border: none !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 20px !important;
 }
 
 .fotos__inicio .fotoP {
@@ -72,6 +79,10 @@ header nav ul li a {
   text-decoration: none;
   text-align: center;
   margin: 40px;
+}
+.fotos__inicio .todas_fotos_home div img:hover {
+  transform: scale(1.1);
+  transition: all 2s;
 }
 .fotos__inicio .text__home {
   font-size: 30px;
@@ -163,6 +174,10 @@ body .section__about div p {
   width: 400px;
   height: 300px;
 }
+.section__productos div:hover {
+  transform: scale(1.1);
+  transition: all 2s;
+}
 
 .container__prod {
   flex-direction: row;
@@ -176,12 +191,6 @@ body .section__about div p {
   text-align: center;
   font-size: 16px;
 }
-.container__prod a:hover {
-  text-decoration: none;
-  color: black k;
-  background-color: lightgray;
-}
-
 body h1 {
   color: darkgreen;
 }
@@ -237,6 +246,12 @@ body .section__sus .texto__sus2 {
   display: grid;
   justify-content: center;
   align-items: center;
+}
+
+.fotos__inicio .todas_fotos_home div a:hover, .container__prod a:hover {
+  text-decoration: none;
+  color: black;
+  background-color: lightgray;
 }
 
 /*# sourceMappingURL=style2.css.map */

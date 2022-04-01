@@ -3,7 +3,7 @@
 header{
     h1{
         color: darkgreen;
-        font-size: 60px;
+        font-size: 65px;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
     }
@@ -14,8 +14,9 @@ header{
            
             li{
                 display: inline-block;
-                width: 18%;
+                width: 19%;
                 position: relative;
+                text-align: center;
                 @include medidas(16px,arial);
                
                 text-decoration: none;
@@ -26,11 +27,20 @@ header{
                 }
                 a{
                     color:black;
-                    color: black;
                     font-size: $font-size1;
                     margin: 8px; 
                     text-decoration: none;
                 }
+                div{
+                  .prod{
+                      background-color: white !important; 
+                      color: black !important;
+                      border: none !important;
+                      font-family: Arial, Helvetica, sans-serif !important;
+                      font-size: $font-size1 !important;
+                  }
+                }
+                
             };
         }
     }
@@ -95,8 +105,20 @@ header{
                     margin: 40px;
             }
         }
+        img:hover{
+            transform: scale(1.1);
+            transition: all 2s;
+        }
+        a:hover{
+            @extend %a-hover;
+            }
+      
     }
+    
  }
+
+
+ 
  .text__home{
     font-size: $font-size2;
     font-family: Arial, Helvetica, sans-serif;
